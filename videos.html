@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.png" type="image/x-ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="videos.css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="loading" class="spinator" style="margin-top:-200px;">
+    <div class="spinner">
+      <div class="spinner__square"></div>
+      <div class="spinner__square"></div>
+      <div class="spinner__square"></div>
+      <div class="spinner__square"></div>
+    </div>
+  </div>
+    <!-- navbar -->
+    <div class="nav" id="pageup">
+        <a href="home.html"><h1 class="logo">Studio Ghida</h1></a>
+        <div class="hamburger">
+            <nav role="navigation">
+                <div id="menuToggle">
+                
+                  <input type="checkbox" id="burgerbox" onclick="checkMe()"/>
+                  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <ul id="menu">
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="team.html"><li>Team</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="photos.html"><li>Photos</li></a>
+                    <a href="videos.html"><li>Video Clips</li></a>
+
+                  </ul>
+                </div>
+              </nav>
+        </div>
+        <ul class="nav-links">
+            <a href="home.html"><li class="link home">Home</li></a>
+            <a href="team.html"><li class="link about">Team</li></a>
+            <a href="contact.html"><li class="link contact">Contact</li></a>
+            <a href="photos.html"><li class="link photos">Photos</li></a>
+            <a href="videos.html"><li class="link videos active" style="width:123px">Video Clips</li></a>
+        </ul>
+    </div>
+    <!-- content of video page -->
+    <div class="conta">
+      <div class="container">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ORCqc7rYLbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+      </div> 
+    </div>
+    <center>
+      <h1 style="text-align: center;font-size:38px;">Awesome Team</h1>
+      <p style="color:white; font-size:18px; text-align:center;">Check out our awesome youtube content</p>
+      <button id="mybtn"><a href="https://www.youtube.com/channel/UCTDYhQbtKl-RtfhlF24gpEg">Youtube</a></button>
+    </center>
+    <center style="padding-top: 70px;">
+      <div class="row"> 
+        <div class="column">
+          <iframe width=100% height=720 src="https://www.youtube.com/embed/LKkIRbNfSow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe> 
+          <iframe width="100%" height="711" src="https://www.youtube.com/embed/j_2w-Vvd55s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+          <iframe width="100%" height="711" src="https://www.youtube.com/embed/6IQ8SEHD0dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+          <iframe width="100%" height="711" src="https://www.youtube.com/embed/JMilC_zptf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+          <iframe width=100% height=720 src="https://www.youtube.com/embed/xdnWYin4uwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe> 
+          <iframe width="100%" height="711" src="https://www.youtube.com/embed/J1qspynHXiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        </div>  
+       
+      </div>
+    </center>
+    <!-- content of video page -->
+    <footer style="text-align: center; color:white;">
+      <pre>
+    &copy; Studio Ghida 2022
+    created with &#10084;&#65039; by 
+    <color id="myname">Rawad Abdallah <br>w/ Mahdi Mazbouh and Ali Shuman</color>
+          </pre>
+    </footer>
+
+
+
+
+    
+      <!-- script for the intro loading screen -->
+   <script>
+    let load = document.querySelector("#loading");
+
+    window.addEventListener("load",function(){
+      setTimeout(function() {
+        load.style.opacity=0
+            setTimeout(function(){
+                load.style.display = "none";
+            },500)
+        },2000);
+      },
+    );
+
+     let y = window.matchMedia("(min-width:530px)");
+     const cb = document.querySelector("#burgerbox");
+     const logo = document.querySelector(".logo");
+     cb.checked = false;
+     function checkMe(){
+       if(y.matches){
+         if(cb.checked){
+           logo.style.transform = "translateX(130px)";
+         }else{
+           logo.style.transform = "translateX(0px)";
+         }
+       }
+     }
+     window.onresize = function(){
+     cb.checked = false;
+     logo.style.transform = "translateX(0px)";
+     }
+   </script>
+      <!-- !script for the intro loading screen -->
+
+<script src="app2.js"></script>
+</body>
+</html>

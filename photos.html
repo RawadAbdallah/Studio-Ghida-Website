@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.png" type="image/x-ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="photos.css">
+    <title>Studio Ghida - Photos</title>
+</head>
+<body" style="height:2000px;">
+    <div id="loading" class="spinator">
+        <div class="spinner">
+          <div class="spinner__square"></div>
+          <div class="spinner__square"></div>
+          <div class="spinner__square"></div>
+          <div class="spinner__square"></div>
+        </div>
+      </div>
+    <!-- navbar -->
+    <div class="nav" id="pageup">
+      <a href="home.html"><h1 class ="logo">Studio Ghida</h1></a>
+      <div class="hamburger">
+          <nav role="navigation">
+              <div id="menuToggle">
+              
+                <input type="checkbox" id="burgerbox" onclick="checkMe()"/>
+                
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id="menu">
+                  <a href="home.html"><li>Home</li></a>
+                  <a href="team.html"><li>Team</li></a>
+                  <a href="contact.html"><li>Contact</li></a>
+                  <a href="photos.html"><li>Photos</li></a>
+                  <a href="videos.html"><li>Video Clips</li></a>
+
+                </ul>
+              </div>
+            </nav>
+      </div>
+      <ul class="nav-links">
+          <a href="home.html"><li class="link home">Home</li></a>
+          <a href="team.html"><li class="link about">Team</li></a>
+          <a href="contact.html"><li class="link contact">Contact</li></a>
+          <a href="photos.html"><li class="link photos active">Photos</li></a>
+          <a href="videos.html"><li class="link videos" style="width:123px">Video Clips</li></a>
+      </ul>
+  </div>
+  <!-- carousel slideshow -->
+   <!-- Slideshow container -->
+
+<div class="slideshow-container">
+  <h1 style="text-align: right; color:white">Special Photos Of The Month</h1>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/img.png" style="width:100%">
+    <div class="text" style="color:tomato; background-color: rgba(0,0,0,0.4);">Mohammad & Batoul &#128151;</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/img3.PNG" style="width:100%">
+    <div class="text">Ghida & Alaa  &#128081;</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/team.jpg" style="width:100%">
+    <div class="text">&#128293; The Team &#128293;</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
+
+<!-- Photo Grid -->
+
+
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<h1 style="margin-top:100px;text-align:center; color:rgb(255, 255, 255);">Check out more of our photos</h1>
+<div class="row"> 
+  <div class="column">
+    <img src="img/7amoodi.jpg" style="width:100%">
+    <img src="img/kids.jpg" style="width:100%">
+    <img src="img/cindrella.jpg" style="width:100%">
+    <img src="img/img6.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/7amoodi2.jpg" style="width:100%">
+    <img src="img/7asona.jpg" style="width:100%">
+    <img src="img/hamoudiandbatoul2.jpg" style="width:100%">
+    <img src="img/aliabd.jpg" style="width:100%">
+    <img src="img/kid.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/7asonaandyehya.jpg" style="width:100%">
+    <img src="img/behindthescenes.jpg" style="width:100%">
+    <img src="img/hamoudiandbatoul.jpg" style="width:100%">
+    <img src="img/alaaandghida.jpg" style="width:100%">
+    <img src="img/220342992_941064303130601_194026064350388709_n.jpg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="img/7amood.jpg" style="width:100%">
+    <img src="img/chefrabih.jpg" style="width:100%">
+    <img src="img/ali.jpg" style="width:100%">
+    <img src="img/ghida.jpg" style="width:100%">
+    <img src="img/233677890_948251555745209_216561663146304476_n.jpg" style="width:100%">
+  </div>
+</div>
+
+<center>
+  <h2>For more content check out our facebook page</h2>  
+  <button type="button"id="btn2"><a href="https://www.facebook.com/StudioGhidaProduction" target="_blank">Facebook</a></button>
+</center>
+
+<footer style="text-align: center;">
+  <pre>
+&copy; Studio Ghida 2022
+created with &#10084;&#65039; by 
+<color id="myname">Rawad Abdallah <br>w/ Mahdi Mazbouh and Ali Shuman</color>
+      </pre>
+</footer>
+</body>
+</html>
+
+  <!-- script for the intro loading screen -->
+   <script>
+    let load = document.querySelector("#loading");
+
+    window.addEventListener("load",function(){
+      setTimeout(function() {
+        load.style.opacity=0
+          setTimeout(function(){
+            load.style.display = "none";
+          },500)
+        },2000);
+      },
+    );
+
+        let y = window.matchMedia("(min-width:530px)");
+        const cb = document.querySelector("#burgerbox");
+        const logo = document.querySelector(".logo");
+        cb.checked = false;
+        function checkMe(){
+          if(y.matches){
+            if(cb.checked){
+              logo.style.transform = "translateX(130px)";
+            }else{
+              logo.style.transform = "translateX(0px)";
+            }
+          }
+        }
+        window.onresize = function(){
+        cb.checked = false;
+        logo.style.transform = "translateX(0px)";
+        }
+      </script>
+
+  <!-- script for the carousel slideshow -->
+
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+
+  </script>
+   <script src="app2.js"></script>
+</body>
+</html>
